@@ -29,7 +29,7 @@ Need to contact Resa?
                         <div class="info_item">
                             <i class="lnr lnr-envelope"></i>
                             <h6><a href="#">theresaobamwonyi@gmail.com</a></h6>
-                            <p>Send in your requests, anytime.</p>
+                            <p>Send in your messages, anytime.</p>
                         </div>
                     </div>
                 </div>
