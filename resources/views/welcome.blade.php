@@ -3,7 +3,23 @@
 @section('content')
 Hi, I'm Resa!
 @endsection('content')
+<style>
 
+@media (max-width: 600px) {
+    .banner_inner {
+		background-image: url('../img/about.jpg');
+	}
+	.banner_content h2{
+		color: #fff;
+	}
+	.banner_content h5{
+		color: #fff;
+	}
+	.banner_content h6{
+		color: #fff;
+	}
+}
+</style>
 	<!--================ Start Home Banner Area =================-->
 	<section class="home_banner_area">
 		<div class="banner_inner">
@@ -21,7 +37,7 @@ Hi, I'm Resa!
 					</div>
 					<div class="col-lg-5">
 						<div class="home_right_img">
-							<img class="" src="img/banner/town.svg" alt="">
+							<img class="" src="img/banner/town.svg" alt="" width="100%">
 						</div>
 					</div>
 				</div>
@@ -34,13 +50,13 @@ Hi, I'm Resa!
 	<section class="about_area section_gap">
 		<div class="container">
 			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-5">
-					<div class="about_img">
-						<img class="" src="img/about.jpg" alt="">
+				<div class="col-md-5" >
+					<div class="about_img"  style="margin-left:20%">
+						<img class="" src="img/about.jpg" width="100%"alt="">
 					</div>
 				</div>
 
-				<div class="offset-lg-1 col-lg-5">
+				<div class="offset-lg-1 col-md-6">
 					<div class="main_title text-center">
 						<h2>Get to know Me</h2>
 						<p>
