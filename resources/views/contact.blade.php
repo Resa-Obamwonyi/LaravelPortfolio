@@ -11,6 +11,9 @@ Need to contact Resa?
         <div class="text-center">
 					<div class="main_title">
 						<h2>Contact Me</h2>
+                        @if(Session::has('success'))
+        <div class="alert alert-success text-center">{{Session::get('success')}}</div>
+                 @endif
 					</div>
 				</div>
             <div class="row">
@@ -29,7 +32,7 @@ Need to contact Resa?
                         <div class="info_item">
                             <i class="lnr lnr-envelope"></i>
                             <h6><a href="#">theresaobamwonyi@gmail.com</a></h6>
-                            <p>Send in your requests, anytime.</p>
+                            <p>Send in your messages, anytime.</p>
                         </div>
                     </div>
                 </div>

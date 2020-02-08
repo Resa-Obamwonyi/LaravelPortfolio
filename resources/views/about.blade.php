@@ -8,7 +8,7 @@ Who is Resa?
 		<div class="container">
         <div class="text-center">
 					<div class="main_title">
-						<h2>About Me</h2>
+						<h2>About Theresa</h2>
 					</div>
                 </div>
                 <br>

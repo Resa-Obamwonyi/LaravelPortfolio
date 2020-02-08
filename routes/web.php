@@ -20,7 +20,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/contact','ContactController@home');
-Route::post('/postcontact','ContactController@getdata');
+Route::post('/postcontact','ContactController@sendMail');
 
 
 Route::get('/portfolio', function () {

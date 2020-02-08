@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
+use App\ContactMe;
 
 class ContactController extends Controller
 {
@@ -12,9 +13,15 @@ class ContactController extends Controller
     {
         return view('contact');
     }
-    public function getdata(Request $request)
+    public function sendMail(Request $request)
     {
-        $email = $request->get('email');
-        Mail::to($email)->send(new ContactMail());
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+            'subject'=>'required',
+            'message' => 'required'
+            ]);
+           ContactMe::create($request->all());
+           return back()->with('success', 'Thanks for contacting me!');
     }
 }
