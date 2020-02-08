@@ -11,6 +11,9 @@ Need to contact Resa?
         <div class="text-center">
 					<div class="main_title">
 						<h2>Contact Me</h2>
+                        @if(Session::has('success'))
+        <div class="alert alert-success text-center">{{Session::get('success')}}</div>
+                 @endif
 					</div>
 				</div>
             <div class="row">
